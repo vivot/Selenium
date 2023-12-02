@@ -5,18 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-<<<<<<< HEAD
     <artifactId>mypractice-web</artifactId>
-=======
-    <artifactId>Selenium</artifactId>
->>>>>>> ef91acc (day12)
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<<<<<<< HEAD
 
 
     </properties>
@@ -24,17 +19,11 @@
     <dependencies>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-=======
-    </properties>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
->>>>>>> ef91acc (day12)
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.11.0</version>
         </dependency>
-<<<<<<< HEAD
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -45,14 +34,3 @@
     </dependencies>
 
 </project>
-=======
-
-
-
-
-    </dependencies>
-
-
-
-</project>
->>>>>>> ef91acc (day12)
