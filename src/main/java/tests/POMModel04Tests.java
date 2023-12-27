@@ -10,6 +10,6 @@ public class POMModel04Tests {
     public static void main(String[] args) {
         WebDriver driver = DriverFactory.getWebDriver();
         BasePage homePage=new BasePage( driver );
-        homePage.footerComponent().doSomething();
+       // homePage.footerComponent().doSomething();
     }
 }
