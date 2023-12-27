@@ -2,7 +2,7 @@ package models.components;
 
 import org.openqa.selenium.WebDriver;
 
-@ComponentCSSSelector( value = ".footer")
+@ComponentCSSSelector(value = ".footer")
 public class FooterComponent {
     // SELECTOR
     // METHOD
@@ -11,6 +11,7 @@ public class FooterComponent {
     public FooterComponent(WebDriver driver) {
         this.driver = driver;
     }
-    public void doSomething(){
+
+    public void doSomething() {
     }
 }

@@ -24,7 +24,7 @@ public class LoginPageModel03 {
 
     }
 
-    public void  clickLoginBtn() {
+    public void clickLoginBtn() {
         driver.findElement( LOGIN_BTN_SEL ).click();
 
 

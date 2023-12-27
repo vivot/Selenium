@@ -13,26 +13,26 @@ public class FooterComponentTest {
     public static void main(String[] args) {
         WebDriver driver = DriverFactory.getWebDriver();
         driver.get( "https://demowebshop.tricentis.com/" );
-        try{
-        HomePage homePage =new HomePage( driver );
-        FooterComponent footerComponent=homePage.footerComp();
-        InformationColumnComponent informationColumnComp=footerComponent.informationColumnComponent();
-        CustomerServiceColumnComponent customerServiceColumnComponent=footerComponent.customerServiceColumnComponent();
-        testFooterComp( informationColumnComp );
-        testFooterComp( customerServiceColumnComponent );}
-        catch (Exception ignored){
-        }
-        finally {
+        try {
+            HomePage homePage = new HomePage( driver );
+            FooterComponent footerComponent = homePage.footerComp();
+            InformationColumnComponent informationColumnComp = footerComponent.informationColumnComponent();
+            CustomerServiceColumnComponent customerServiceColumnComponent = footerComponent.customerServiceColumnComponent();
+            testFooterComp( informationColumnComp );
+            testFooterComp( customerServiceColumnComponent );
+        } catch (Exception ignored) {
+        } finally {
             driver.quit();
 
         }
     }
-    private static void testFooterComp(FooterColumnComponent footerColumnComponent){
+
+    private static void testFooterComp(FooterColumnComponent footerColumnComponent) {
         System.out.println( footerColumnComponent.headerEle().getText() );
         for (WebElement linkEle : footerColumnComponent.linkEle()) {
 
-            System.out.println( linkEle.getText()+": "+linkEle.getAttribute( "href" ) );
-            System.out.println("======");
+            System.out.println( linkEle.getText() + ": " + linkEle.getAttribute( "href" ) );
+            System.out.println( "======" );
         }
 
     }
