@@ -16,10 +16,11 @@ public class FooterComponentTest {
         try {
             HomePage homePage = new HomePage( driver );
             FooterComponent footerComponent = homePage.footerComp();
-            InformationColumnComponent informationColumnComp = footerComponent.informationColumnComponent();
-            CustomerServiceColumnComponent customerServiceColumnComponent = footerComponent.customerServiceColumnComponent();
+            InformationColumnComponent informationColumnComp = footerComponent.informationColumnComp();
+            CustomerServiceColumnComponent customerServiceColumnComp = footerComponent.customerServiceColumnComp();
             testFooterComp( informationColumnComp );
-            testFooterComp( customerServiceColumnComponent );
+            testFooterComp( customerServiceColumnComp);
+
         } catch (Exception ignored) {
         } finally {
             driver.quit();

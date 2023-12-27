@@ -5,4 +5,5 @@ public class FindComponent {
         return componentClass.getAnnotation( ComponentCSSSelector.class ).value();
 
     }
+
 }

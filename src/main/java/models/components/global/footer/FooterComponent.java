@@ -11,11 +11,11 @@ public class FooterComponent extends Component {
         super( driver, component );
     }
 
-    public InformationColumnComponent informationColumnComponent() {
+    public InformationColumnComponent informationColumnComp() {
         return findComponent( InformationColumnComponent.class );
     }
 
-    public CustomerServiceColumnComponent customerServiceColumnComponent() {
+    public CustomerServiceColumnComponent customerServiceColumnComp() {
         return findComponent( CustomerServiceColumnComponent.class );
     }
 }
