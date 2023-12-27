@@ -9,9 +9,9 @@ public class ComponentExploring {
         Class<?>[] parameters = new Class[]{};
         try {
             //Java Reflection
-            Constructor<T> constructor = loginPageClass.getConstructor( parameters );
+            Constructor<T> constructor = loginPageClass.getConstructor(parameters);
             T loginPageObj = constructor.newInstance();
-            loginPageObj.inputUserName( usernameStr );
+            loginPageObj.inputUserName(usernameStr);
 
         } catch (Exception e) {
             e.printStackTrace();

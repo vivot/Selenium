@@ -12,16 +12,17 @@ import org.openqa.selenium.WebElement;
 public class FooterComponentTest {
     public static void main(String[] args) {
         WebDriver driver = DriverFactory.getWebDriver();
-        driver.get( "https://demowebshop.tricentis.com/" );
+        driver.get("https://demowebshop.tricentis.com/");
         try {
-            HomePage homePage = new HomePage( driver );
+            HomePage homePage = new HomePage(driver);
             FooterComponent footerComponent = homePage.footerComp();
             InformationColumnComponent informationColumnComp = footerComponent.informationColumnComp();
             CustomerServiceColumnComponent customerServiceColumnComp = footerComponent.customerServiceColumnComp();
-            testFooterComp( informationColumnComp );
-            testFooterComp( customerServiceColumnComp);
+            testFooterComp(informationColumnComp);
+            testFooterComp(customerServiceColumnComp);
 
-        } catch (Exception ignored) {
+        } catch (Exception e) {
+            e.printStackTrace();
         } finally {
             driver.quit();
 
@@ -29,11 +30,11 @@ public class FooterComponentTest {
     }
 
     private static void testFooterComp(FooterColumnComponent footerColumnComponent) {
-        System.out.println( footerColumnComponent.headerEle().getText() );
+        System.out.println(footerColumnComponent.headerEle().getText());
         for (WebElement linkEle : footerColumnComponent.linkEle()) {
 
-            System.out.println( linkEle.getText() + ": " + linkEle.getAttribute( "href" ) );
-            System.out.println( "======" );
+            System.out.println(linkEle.getText() + ": " + linkEle.getAttribute("href"));
+            System.out.println("======");
         }
 
     }

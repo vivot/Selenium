@@ -8,14 +8,22 @@ import org.openqa.selenium.WebElement;
 @ComponentCSSSelector(value = ".footer")
 public class FooterComponent extends Component {
     public FooterComponent(WebDriver driver, WebElement component) {
-        super( driver, component );
+        super(driver, component);
     }
 
     public InformationColumnComponent informationColumnComp() {
-        return findComponent( InformationColumnComponent.class );
+        return findComponent(InformationColumnComponent.class);
     }
 
     public CustomerServiceColumnComponent customerServiceColumnComp() {
-        return findComponent( CustomerServiceColumnComponent.class );
+        return findComponent(CustomerServiceColumnComponent.class);
+    }
+
+    public MyAccountColumnComponent myAccountColumnComponent() {
+        return findComponent(MyAccountColumnComponent.class);
+    }
+
+    public FollowUsColumnComponent followUsColumnComponent() {
+        return findComponent(FollowUsColumnComponent.class);
     }
 }
