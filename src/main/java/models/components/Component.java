@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import support.ui.ExpectedConditionEx;
 
 import java.lang.reflect.Constructor;
 import java.time.Duration;
@@ -16,11 +17,17 @@ public class Component {
     protected WebDriver driver;
     protected WebElement component;
     protected WebDriverWait wait;
+    public WebElement getComponent(){
+        return this.component;
+    }
+    public WebDriverWait componentWait(){
+        return this.wait;
+    }
 
     public Component(WebDriver driver, WebElement component) {
         this.driver = driver;
         this.component = component;
-        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(15));
+        this.wait = new WebDriverWait(this.driver, Duration.ofSeconds(5));
     }
 
     // Narrow down searching
